@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small World</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="logo"><a href="/">Small World</a></li>
+            <li class="nav-links"><a href="/signin">Sign in </a></li>
+            <li class="nav-links"><a href="/register">Register</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class ="container">
+            <img class="picture" src="/img/photo.jpg" alt="Lady holding a camera">
+            <p class="introduction" class="into">Small World is a place where you can talk to like minded people, meet them and spend time together
+            in a way that you like the most!</p>
+        </div>
+        <div class="info-row">
+            <div class="info-column">
+                <img class="icon" src="/img/painter.png" alt="painting icon">
+                <p class="short-info">Based on your interests</p>
+            </div>
+            <div class="info-column">
+                <img class="icon" src="/img/distance-icon.png" alt="distance icon">
+                <p class="short-info">and your location,</p>
+            </div>
+            <div class="info-column">
+                <img class="icon" src="/img/celeb-icon.png" alt="champagne icon">
+                <p class="short-info">we connect you with people with similar hobbies.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <input class="button-one" onClick="window.location.href='/register'" type="submit" method="POST" value="REGISTER" action="/register">
+            <input class="button-one" onClick="window.location.href='/signin'" type="submit" method="POST" value="SIGN IN" action="/signin">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small World</title>
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body class="register-body">
+    <div class="navbar">
+        <ul>
+            <li class="logo"><a href="/">Small World</a></li>
+            <li class="nav-links"><a href="/signin">Sign in </a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <form method="POST" action="/register">
+            <h1 class="registration-header">Registration</h1>
+            <p class="fill-in-form">Fill in the form. You'll need username and password to access your account later.</p>
+            <hr>
+            <label for="name"><b>First name</b></label><br>
+            <input class="register-input" type="text" name="name" autocomplete="off" required><br>
+            <label for="lastName"><b>Last name</b></label><br>
+            <input class="register-input" type="text" name="lastName" autocomplete="off" required><br>
+            <label for="username"><b>User name</b></label><br>
+            <input class="register-input" type="text" name="username" placeholder="eg. sunflower10" autocomplete="off" required><br>
+            <label for="password"><b>Password</b></label><br>
+            <input class="register-input" type="password" name="password" autocomplete="off" required><br>
+            <label for="city"><b>City</b></label><br>
+            <input class="register-input" type="text" name="city" autocomplete="off" required><br>
+            <label for="age"><b>Age</b></label><br>
+            <input class="register-input" type="number" name="age" autocomplete="off" required><br>
+            <div class="choose-interest">
+        <form method="POST" action="/interests">
+        <div class="multiple-interests">
+            <fieldset class="multiple-form">
+            <legend>Choose your interests (you can select multiple options):</legend>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="walking" name="interest" value="walking">
+                    <label for="walking" class="labels">Walking in the park</label>
+                </div>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="coffee" name="interest" value="coffee">
+                    <label for="coffee" class="labels">Coffee and chat</label>
+                </div>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="art" name="interest" value="art">
+                    <label for="art" class="labels">Cinema, theater, art</label>
+                </div>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="trips" name="interest" value="trips">
+                    <label for="trips" class="labels">Trips </label>
+                </div>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="cooking" name="interest" value="cooking">
+                    <label for="cooking" class="labels">Cooking</label>
+                </div>
+                <div class="interest-type">
+                    <input class="checkbox" type="checkbox" id="sports" name="interest" value="sports">
+                    <label for="sports" class="labels">Watching and/or attending sports (chess, cards etc.)</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="buttons">
+            <input class="button-one" type="submit" value="Register">
+            <p class="already-reg">Already registered?</p><input class="button-one" onClick="window.location.href='/signin'" type="submit" method="POST" value="Login" action="/signin"></a>
+        </div>
+    </form>       
+        
+    </div>
+
+</body>
+
+</html>

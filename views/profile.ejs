@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small World</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="logo"><a href="/">Small World</a></li>
+            <li class="nav-links"><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="match-header">You have a match!</h1>
+        <img class="minions" src="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif" alt="happy minions"/>
+        <ul class="results-container"> 
+            <%hobbies.forEach(user => {%>
+                <div class="results">
+                    <h4 class="header"><%=user.name%>, age: <%=user.age%>, from <%=user.city%> likes:</h4>
+                    <%user.interest.forEach(hobby => {%> 
+                    <p class="body"><%=hobby.hobby%></p> 
+                    <%})%>
+                </div>
+            <%})%>
+        </ul>     
+    </div>
+</body>
+</html>

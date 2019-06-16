@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small World</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="logo"><a href="/">Small World</a></li>
+            <li class="nav-links"><a href="/register">Register</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img class="login-pic" src="/img/ladies.png" alt="happy women">
+        <form method="POST" action="/signin" class="login-form-container">
+            <h1>Login</h1>
+            <div class="labels"></div> <label for="username"><b>Username</b></label><br>
+                <input class="login-input" type="text" name="username" placeholder="Username" autocomplete="off"><br>
+                <label for="password"><b>Password</b></label><br>
+                <input class="login-input" type="password" name="password" placeholder="Enter Password" autocomplete="off"><br>
+                <div class="login-register">
+                    <input class="button-one" type="submit" value="Login">
+                    <a href="/register"><input class="button-one" type="button" value="Register"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

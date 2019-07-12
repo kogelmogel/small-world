@@ -34,7 +34,7 @@ app.use(session({
 app.use(morgan("dev"));
 
 let isUserLoggedIn = (req, res, next) => {
-    if(req.session.user && req.cookies.authCookie) {
+    if(req.session.user && req.cookies.seniorCookie) {
         res.redirect("/profile")
     } else {
         next();

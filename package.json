@@ -2,7 +2,7 @@
   "name": "assignment-full-stack-personal-project",
   "version": "1.0.0",
   "description": "Small World project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

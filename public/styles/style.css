@@ -108,6 +108,10 @@ legend{
 }
 .results-container{
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 .results{
     width: 100%;
